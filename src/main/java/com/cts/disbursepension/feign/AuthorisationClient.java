@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
  *  @author 890054
  *
  */
-@FeignClient("AUTH-SERVICE")
+@FeignClient(name = "AUTH-SERVICE", url = "${url.app.auth}")
 public interface AuthorisationClient {
 
 	/**
